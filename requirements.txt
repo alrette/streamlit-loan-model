@@ -1,0 +1,8 @@
+numpy==1.26.4
+xgboost==3.0.0
+streamlit==1.44.1
+scikit-learn==1.6.1
+protobuf==5.29.3
+pandas==2.2.3
+pyarrow==15.0.2
+xgboost==3.0.0
