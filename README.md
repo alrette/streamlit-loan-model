@@ -42,4 +42,4 @@ Key features include:
 
 ## 🚀 How to Run the App
 1. Install Dependencies 
-<pre lang="md"> ```bash # Install dependencies pip install -r requirements.txt ```
+<pre lang="bash"> ```pip install -r requirements.txt ```
