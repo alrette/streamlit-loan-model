@@ -41,5 +41,12 @@ Key features include:
 - Includes sample test cases for clarity
 
 ## 🚀 How to Run the App
+Run this command in the terminal of the environment
 1. Install Dependencies 
-<pre lang="bash"> ```pip install -r requirements.txt ```
+<pre lang="bash"> pip install -r requirements.txt </pre>
+
+2. Run Streamlit
+<pre lang="bash"> streamlit run app.py </pre>
+
+Enjoy predicting your loan chances! 💰📉📈
+Feel free to fork, star ⭐, or contribute!
