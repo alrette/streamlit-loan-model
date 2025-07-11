@@ -1,41 +1,45 @@
-# Loan Approval Prediction System
 
-Project Ujian Tengah Semester ini bertujuan untuk membangun sebuah sistem untuk prediksi persetujuan peminjaman uang melalui implementasi machine learning. Sistem ini dirancang untuk membantu bank menyortir calon peminjam yang memiliki kemungkinan besar ditolak pinjamannnya. Projek ini juga bisa membantu masyarakat untuk mengetahui gambaran kasar persetujuan pinjaman mereka tanpa harus datang langsung ke bank.
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Streamlit](https://img.shields.io/badge/Built%20with-Streamlit-ff4b4b)
+
+# 🏦 Loan Approval Prediction System
+This is a project created for the Ujian Tengah Semester that aims to build a system for predicting loan approval using Machine Learning.
+The system is designed to assist banks in filtering out loan applicants who are likely to be rejected and help individuals get a rough idea of their loan approval chances — without having to go to the bank. 🎯
+
+## 📊 Dataset Description
+The dataset contains profiles of loan applicants along with whether their loan was approved or rejected.
+Key features include:
+
+| Feature                          | Description                                                |
+| -------------------------------- | ---------------------------------------------------------- |
+| `person_age`                     | Age of the applicant ➡️ *Dropped due to multicollinearity* |
+| `person_gender`                  | Gender                                                     |
+| `person_education`               | Highest education level                                    |
+| `person_income`                  | Annual income                                              |
+| `person_emp_exp`                 | Years of employment experience                             |
+| `person_home_ownership`          | Home ownership status                                      |
+| `loan_amnt`                      | Requested loan amount                                      |
+| `loan_intent`                    | Purpose of the loan                                        |
+| `loan_int_rate`                  | Interest rate                                              |
+| `loan_percent_income`            | Loan as a percentage of income                             |
+| `cb_person_cred_hist_length`     | Length of credit history (years)                           |
+| `credit_score`                   | Credit score                                               |
+| `previous_loan_defaults_on_file` | Indicator for past defaults                                |
+| `loan_status` (**target**)       | Loan approval status → `1`: Approved ✅, `0`: Rejected ❌    |
 
 
-# Dataset yang digunakan
-Dataset yang digunakan adalah dataset yang berisi mengenai profil calon peminjam dan status peminjaman apakah disetujui atau tidak.
-Beberapa fiturnya adalah:
+## 🛠️ System Workflow
+1. Preprocessing
+2. Model Training
+3. Model Saving
+4. Deployment using streamlit that includes 2 test cases, approved and rejected
 
-person_age = Usia dari orang tersebut  --> Dibuang dalam preprocessing karena menyebabkan multicollinearity
-person_gender = Gender dari orang tersebut
-person_education = Tingkat pendidikan tertinggi
-person_income = Pendapatan tahunan
-person_emp_exp = Tahun pengalaman bekerja
-person_home_ownership = Status kepemilikan tempat huni
-loan_amnt = Jumlah pinjaman yang diminta
-loan_intent = Tujuan dari pinjaman
-loan_int_rate = Suku bunga pinjaman
-loan_percent_income = Jumlah pinjaman sebagai persentase dari pendapatan tahunan
-cb_person_cred_hist_length = Durasi kredit dalam tahun
-credit_score = Skor kredit dari orang tersebut
-previous_loan_defaults_on_file = Indikator tunggakan pinjaman sebelumnya
-loan_status (target variable) = **Persetujuan pinjaman**; 1: diterima dan 0: ditolak
+## ✨ Features
+- Predicts loan approval using applicant data
+- Built with XGBoost for high accuracy
+- User-friendly interface with Streamlit
+- Includes sample test cases for clarity
 
-# Proses pembentukan sistem
-- Task machine learning yaitu : 
-    Preprocessing data (missing value handling, encoding, train test split) 
-    Melatih dua macam model machine learning yaitu RandomForest dan XGBoost --> dan ditemukan bahwa XGBoost lebih baik
-    Menyimpan model terbaik, scaler, dan encoder dalam file pickle
-- Deploying sistem menggunakan platform **streamlit**
-- Sistem aplikasi dilengkapi dengan 2 test case yang menunjukkan contoh saat pinjaman diterima dan saat pinjaman ditolak
-
-# Cara untuk menjalankan aplikasi
-1. Pastikan jika dependencies sudah benar
-
-Install dependencies:
-```bash
-pip install -requirements.txt
-
-2. Jalankan dengan call
-streamlit run app.py
+## 🚀 How to Run the App
+1. Install Dependencies 
+<pre lang="md"> ```bash # Install dependencies pip install -r requirements.txt ```
