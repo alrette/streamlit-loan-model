@@ -2,8 +2,11 @@
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![Streamlit](https://img.shields.io/badge/Built%20with-Streamlit-ff4b4b)
 
+You can visit deployed streamlit on streamlit cloud here!
+https://eu5ajqmfmwrwdcjcsmvln3.streamlit.app/
+
 # 🏦 Loan Approval Prediction System
-This is a project created for the Ujian Tengah Semester that aims to build a system for predicting loan approval using Machine Learning.
+This is a project created for the Mid Term that aims to build a system for predicting loan approval using Machine Learning.
 The system is designed to assist banks in filtering out loan applicants who are likely to be rejected and help individuals get a rough idea of their loan approval chances — without having to go to the bank. 🎯
 
 ## 📊 Dataset Description
